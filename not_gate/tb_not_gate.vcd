@@ -1,0 +1,33 @@
+$date
+	Fri Feb 21 00:48:45 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module tb_not_gate $end
+$var wire 1 ! F_o $end
+$var reg 1 " A_i $end
+$scope module u_not_gate $end
+$var wire 1 " A_i $end
+$var wire 1 ! F_o $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0"
+1!
+$end
+#5
+0!
+1"
+#10
+1!
+0"
+#15
