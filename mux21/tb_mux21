@@ -1,0 +1,70 @@
+#! /opt/homebrew/Cellar/icarus-verilog/12.0/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/system.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/va_math.vpi";
+S_0x126f06440 .scope module, "tb_mux21" "tb_mux21" 2 4;
+ .timescale -9 -9;
+v0x126f1b250_0 .var "D0_i", 0 0;
+v0x126f1b2f0_0 .var "D1_i", 0 0;
+v0x126f1b3a0_0 .var "S_i", 0 0;
+v0x126f1b470_0 .net "Y_o", 0 0, L_0x126f1b520;  1 drivers
+S_0x126f065b0 .scope module, "u_mux21" "mux21" 2 12, 3 1 0, S_0x126f06440;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "D0_i";
+    .port_info 1 /INPUT 1 "D1_i";
+    .port_info 2 /INPUT 1 "S_i";
+    .port_info 3 /OUTPUT 1 "Y_o";
+v0x126f055a0_0 .net "D0_i", 0 0, v0x126f1b250_0;  1 drivers
+v0x126f1b000_0 .net "D1_i", 0 0, v0x126f1b2f0_0;  1 drivers
+v0x126f1b0a0_0 .net "S_i", 0 0, v0x126f1b3a0_0;  1 drivers
+v0x126f1b150_0 .net "Y_o", 0 0, L_0x126f1b520;  alias, 1 drivers
+L_0x126f1b520 .functor MUXZ 1, v0x126f1b2f0_0, v0x126f1b250_0, v0x126f1b3a0_0, C4<>;
+    .scope S_0x126f06440;
+T_0 ;
+    %delay 0, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x126f1b250_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x126f1b2f0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x126f1b3a0_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x126f1b250_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x126f1b2f0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x126f1b3a0_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x126f1b250_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x126f1b2f0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x126f1b3a0_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x126f1b250_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x126f1b2f0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x126f1b3a0_0, 0, 1;
+    %end;
+    .thread T_0;
+    .scope S_0x126f06440;
+T_1 ;
+    %vpi_call 2 43 "$dumpfile", "tb_mux21.vcd" {0 0 0};
+    %vpi_call 2 44 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x126f06440 {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "tb_mux21.v";
+    "./mux21.v";

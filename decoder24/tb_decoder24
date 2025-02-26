@@ -1,0 +1,87 @@
+#! /opt/homebrew/Cellar/icarus-verilog/12.0/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/system.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/va_math.vpi";
+S_0x12c7072f0 .scope module, "tb_decoder24" "tb_decoder24" 2 4;
+ .timescale -9 -9;
+v0x12c71eba0_0 .var "A0_i", 0 0;
+v0x12c71ec30_0 .var "A1_i", 0 0;
+v0x12c71ecc0_0 .net "Y0_o", 0 0, L_0x12c71f100;  1 drivers
+v0x12c71ed90_0 .net "Y1_o", 0 0, L_0x12c71f300;  1 drivers
+v0x12c71ee40_0 .net "Y2_o", 0 0, L_0x12c71f600;  1 drivers
+v0x12c71ef10_0 .net "Y3_o", 0 0, L_0x12c71f800;  1 drivers
+S_0x12c707460 .scope module, "u_decoder24" "decoder24" 2 15, 3 1 0, S_0x12c7072f0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "A0_i";
+    .port_info 1 /INPUT 1 "A1_i";
+    .port_info 2 /OUTPUT 1 "Y0_o";
+    .port_info 3 /OUTPUT 1 "Y1_o";
+    .port_info 4 /OUTPUT 1 "Y2_o";
+    .port_info 5 /OUTPUT 1 "Y3_o";
+v0x12c70da90_0 .net "A0_i", 0 0, v0x12c71eba0_0;  1 drivers
+v0x12c71e1e0_0 .net "A1_i", 0 0, v0x12c71ec30_0;  1 drivers
+v0x12c71e280_0 .net "Y0_o", 0 0, L_0x12c71f100;  alias, 1 drivers
+v0x12c71e310_0 .net "Y1_o", 0 0, L_0x12c71f300;  alias, 1 drivers
+v0x12c71e3b0_0 .net "Y2_o", 0 0, L_0x12c71f600;  alias, 1 drivers
+v0x12c71e490_0 .net "Y3_o", 0 0, L_0x12c71f800;  alias, 1 drivers
+v0x12c71e530_0 .net *"_ivl_0", 1 0, L_0x12c71efc0;  1 drivers
+v0x12c71e5e0_0 .net *"_ivl_12", 1 0, L_0x12c71f460;  1 drivers
+L_0x1300780a0 .functor BUFT 1, C4<10>, C4<0>, C4<0>, C4<0>;
+v0x12c71e690_0 .net/2u *"_ivl_14", 1 0, L_0x1300780a0;  1 drivers
+v0x12c71e7a0_0 .net *"_ivl_18", 1 0, L_0x12c71f720;  1 drivers
+L_0x130078010 .functor BUFT 1, C4<00>, C4<0>, C4<0>, C4<0>;
+v0x12c71e850_0 .net/2u *"_ivl_2", 1 0, L_0x130078010;  1 drivers
+L_0x1300780e8 .functor BUFT 1, C4<11>, C4<0>, C4<0>, C4<0>;
+v0x12c71e900_0 .net/2u *"_ivl_20", 1 0, L_0x1300780e8;  1 drivers
+v0x12c71e9b0_0 .net *"_ivl_6", 1 0, L_0x12c71f260;  1 drivers
+L_0x130078058 .functor BUFT 1, C4<01>, C4<0>, C4<0>, C4<0>;
+v0x12c71ea60_0 .net/2u *"_ivl_8", 1 0, L_0x130078058;  1 drivers
+L_0x12c71efc0 .concat [ 1 1 0 0], v0x12c71eba0_0, v0x12c71ec30_0;
+L_0x12c71f100 .cmp/eq 2, L_0x12c71efc0, L_0x130078010;
+L_0x12c71f260 .concat [ 1 1 0 0], v0x12c71eba0_0, v0x12c71ec30_0;
+L_0x12c71f300 .cmp/eq 2, L_0x12c71f260, L_0x130078058;
+L_0x12c71f460 .concat [ 1 1 0 0], v0x12c71eba0_0, v0x12c71ec30_0;
+L_0x12c71f600 .cmp/eq 2, L_0x12c71f460, L_0x1300780a0;
+L_0x12c71f720 .concat [ 1 1 0 0], v0x12c71eba0_0, v0x12c71ec30_0;
+L_0x12c71f800 .cmp/eq 2, L_0x12c71f720, L_0x1300780e8;
+    .scope S_0x12c7072f0;
+T_0 ;
+    %delay 0, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x12c71eba0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x12c71ec30_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x12c71eba0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x12c71ec30_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x12c71eba0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x12c71ec30_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x12c71eba0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x12c71ec30_0, 0, 1;
+    %end;
+    .thread T_0;
+    .scope S_0x12c7072f0;
+T_1 ;
+    %vpi_call 2 44 "$dumpfile", "tb_decoder24.vcd" {0 0 0};
+    %vpi_call 2 45 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x12c7072f0 {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "tb_decoder24.v";
+    "./decoder24.v";

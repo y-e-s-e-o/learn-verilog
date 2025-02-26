@@ -1,0 +1,42 @@
+$date
+	Wed Feb 26 17:01:15 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module tb_mux21 $end
+$var wire 1 ! Y_o $end
+$var reg 1 " D0_i $end
+$var reg 1 # D1_i $end
+$var reg 1 $ S_i $end
+$scope module u_mux21 $end
+$var wire 1 " D0_i $end
+$var wire 1 # D1_i $end
+$var wire 1 $ S_i $end
+$var wire 1 ! Y_o $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0$
+1#
+0"
+1!
+$end
+#1
+0!
+1$
+#2
+1!
+0$
+#3
+0!
+1$
+0#
