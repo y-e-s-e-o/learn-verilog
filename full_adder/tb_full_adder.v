@@ -4,9 +4,9 @@
 module tb_full_adder(
 
 );
-    reg   A_i;
-    reg   B_i;
-    reg   C_i;
+    reg        A_i;
+    reg        B_i;
+    reg        C_i;
     wire [1:0] F_o;
 
     full_adder u_full_adder(

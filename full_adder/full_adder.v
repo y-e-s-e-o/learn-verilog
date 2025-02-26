@@ -2,9 +2,9 @@ module full_adder(
     A_i, B_i, C_i, F_o
 );
 
-    input  A_i;
-    input  B_i;
-    input  C_i;
+    input        A_i;
+    input        B_i;
+    input        C_i;
     output [1:0] F_o;
 
     wire S_w;
