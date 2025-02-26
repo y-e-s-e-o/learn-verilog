@@ -1,5 +1,3 @@
-//signed 정수의 가산기, 감산기
-
 `include "add_sub_4bit.v"
 `timescale 1ns/1ns
 
