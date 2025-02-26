@@ -1,0 +1,51 @@
+$date
+	Wed Feb 26 14:53:49 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module tb_full_adder $end
+$var wire 2 ! F_o [1:0] $end
+$var reg 1 " A_i $end
+$var reg 1 # B_i $end
+$var reg 1 $ C_i $end
+$scope module u_full_adder $end
+$var wire 1 " A_i $end
+$var wire 1 # B_i $end
+$var wire 1 $ C_i $end
+$var wire 1 % C_w $end
+$var wire 1 & S_w $end
+$var wire 2 ' F_o [1:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1 '
+1&
+0%
+0$
+0#
+1"
+b1 !
+$end
+#1
+1%
+b10 !
+b10 '
+0&
+1$
+1#
+0"
+#2
+0%
+b1 !
+b1 '
+1&
+0$
