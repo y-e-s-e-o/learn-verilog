@@ -1,0 +1,238 @@
+$date
+	Fri Feb 28 00:40:27 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module tb_ALU_4bit $end
+$var wire 4 ! R_o [3:0] $end
+$var reg 4 " A_i [3:0] $end
+$var reg 4 # B_i [3:0] $end
+$var reg 2 $ Control_i [1:0] $end
+$scope module u_ALU_4bit $end
+$var wire 4 % A_i [3:0] $end
+$var wire 4 & B_i [3:0] $end
+$var wire 2 ' Control_i [1:0] $end
+$var wire 1 ( Z_o $end
+$var wire 1 ) V_o $end
+$var wire 4 * R_w [3:0] $end
+$var wire 1 + N_o $end
+$var wire 1 , C_o $end
+$var reg 4 - R_o [3:0] $end
+$scope module u_add_sub_4bit $end
+$var wire 4 . A_i [3:0] $end
+$var wire 4 / B_i [3:0] $end
+$var wire 1 0 add_sub $end
+$var wire 1 ( Z_o $end
+$var wire 1 ) V_o $end
+$var wire 4 1 S_o [3:0] $end
+$var wire 1 + N_o $end
+$var wire 5 2 C_w [4:0] $end
+$var wire 1 , C_o $end
+$var wire 4 3 B_w [3:0] $end
+$scope module adder $end
+$var wire 4 4 A_i [3:0] $end
+$var wire 4 5 B_i [3:0] $end
+$var wire 1 6 C_i $end
+$var wire 1 ) V_o $end
+$var wire 1 ( Z_o $end
+$var wire 4 7 S_o [3:0] $end
+$var wire 1 + N_o $end
+$var wire 5 8 C_w [4:0] $end
+$var wire 1 , C_o $end
+$scope module bit0 $end
+$var wire 1 9 A_i $end
+$var wire 1 : B_i $end
+$var wire 1 ; C_i $end
+$var wire 1 < C_o $end
+$var wire 1 = S_o $end
+$upscope $end
+$scope module bit1 $end
+$var wire 1 > A_i $end
+$var wire 1 ? B_i $end
+$var wire 1 @ C_i $end
+$var wire 1 A C_o $end
+$var wire 1 B S_o $end
+$upscope $end
+$scope module bit2 $end
+$var wire 1 C A_i $end
+$var wire 1 D B_i $end
+$var wire 1 E C_i $end
+$var wire 1 F C_o $end
+$var wire 1 G S_o $end
+$upscope $end
+$scope module bit3 $end
+$var wire 1 H A_i $end
+$var wire 1 I B_i $end
+$var wire 1 J C_i $end
+$var wire 1 K C_o $end
+$var wire 1 L S_o $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0L
+0K
+0J
+0I
+0H
+0G
+0F
+0E
+0D
+0C
+1B
+0A
+0@
+1?
+0>
+1=
+0<
+0;
+0:
+19
+b0 8
+b11 7
+06
+b10 5
+b1 4
+b10 3
+bz0 2
+b11 1
+00
+b10 /
+b1 .
+b11 -
+0,
+0+
+b11 *
+0)
+0(
+b0 '
+b10 &
+b1 %
+b0 $
+b10 #
+b1 "
+b11 !
+$end
+#1
+1,
+1K
+0)
+1J
+0+
+0@
+0G
+1F
+0L
+0<
+b1 !
+b1 -
+1E
+1;
+1D
+1I
+0(
+1=
+b1 *
+b1 1
+b1 7
+0B
+1A
+b11101 8
+16
+0:
+1?
+bz1 2
+10
+b1110 3
+b1110 5
+09
+1>
+b1 $
+b1 '
+b1 #
+b1 &
+b1 /
+b10 "
+b10 %
+b10 .
+b10 4
+#2
+0G
+0,
+0J
+0+
+0K
+0F
+0L
+0@
+0<
+0E
+0;
+0D
+0I
+1=
+b11 *
+b11 1
+b11 7
+1B
+0A
+b0 8
+06
+b10 3
+b10 5
+bz0 2
+00
+19
+0>
+b11 !
+b11 -
+b10 $
+b10 '
+b10 #
+b10 &
+b10 /
+b1 "
+b1 %
+b1 .
+b1 4
+#3
+1+
+0=
+1G
+b1110 *
+b1110 1
+b1110 7
+1L
+1@
+1<
+1;
+0?
+1D
+1I
+b11 8
+16
+0:
+bz1 2
+10
+b1100 3
+b1100 5
+b1 !
+b1 -
+b11 $
+b11 '
+b11 #
+b11 &
+b11 /
