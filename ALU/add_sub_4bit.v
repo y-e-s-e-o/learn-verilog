@@ -1,4 +1,4 @@
-//signed 정수의 가산기, 감산기d
+//signed 정수의 가산기, 감산기
 
 module add_sub_4bit (
     input  [3:0] A_i, B_i,
