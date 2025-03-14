@@ -1,4 +1,3 @@
-`include "regfile.v"
 `timescale 1ns/1ns
 
 module tb_regfile (
@@ -51,8 +50,8 @@ module tb_regfile (
     end
 
     initial begin
-        $dumpfile("tb_regfile.vcd");  
-        $dumpvars(0, tb_regfile);     
+        $dumpfile("regfile.vcd");  
+        $dumpvars(1);     
     end
 
 

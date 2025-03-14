@@ -1,4 +1,3 @@
-`include "full_adder.v"
 `timescale 1ns/1ns
 
 module tb_full_adder(
@@ -35,8 +34,8 @@ module tb_full_adder(
     end
 
     initial begin
-	    $dumpfile("tb_full_adder.vcd");
-	    $dumpvars(0, tb_full_adder);
+	    $dumpfile("full_adder.vcd");
+	    $dumpvars(1);
     end
 
 endmodule

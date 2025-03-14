@@ -1,0 +1,36 @@
+$date
+	Fri Mar 14 23:16:11 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module tb_full_adder_4bit $end
+$var wire 4 ! S_o [3:0] $end
+$var wire 1 " C_o $end
+$var reg 4 # A_i [3:0] $end
+$var reg 4 $ B_i [3:0] $end
+$var reg 1 % C_i $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0%
+b101 $
+b1010 #
+0"
+b1111 !
+$end
+#1
+b1010 !
+b111 $
+b11 #
+#2
+b101 !
+b11 $
+b10 #

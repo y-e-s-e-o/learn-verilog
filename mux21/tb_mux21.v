@@ -1,4 +1,3 @@
-`include "mux21.v"
 `timescale 1ns/1ns
 
 module tb_mux21(
@@ -40,8 +39,8 @@ module tb_mux21(
     end
 
     initial begin
-	    $dumpfile("tb_mux21.vcd");
-	    $dumpvars(0, tb_mux21);
+	    $dumpfile("mux21.vcd");
+	    $dumpvars(1);
     end
     
 endmodule

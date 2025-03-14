@@ -1,4 +1,3 @@
-`include "rs_Dflipflop.v"
 `timescale 1ns/1ns
 
 module tb_rs_Dflipflop (
@@ -40,8 +39,8 @@ module tb_rs_Dflipflop (
     end
 
     initial begin
-        $dumpfile("tb_rs_Dflipflop.vcd");  
-        $dumpvars(0, tb_rs_Dflipflop);     
+        $dumpfile("rs_Dflipflop.vcd");  
+        $dumpvars(1);     
     end
 
 endmodule

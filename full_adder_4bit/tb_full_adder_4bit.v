@@ -1,4 +1,3 @@
-`include "full_adder_4bit.v"
 `timescale 1ns/1ns
 
 module tb_full_adder_4bit (
@@ -38,8 +37,8 @@ module tb_full_adder_4bit (
     end
 
     initial begin
-	    $dumpfile("tb_full_adder_4bit.vcd");
-	    $dumpvars(0, tb_full_adder_4bit);
+	    $dumpfile("full_adder_4bit.vcd");
+	    $dumpvars(1);
     end
 
 endmodule

@@ -1,5 +1,5 @@
 $date
-	Fri Feb 28 16:54:21 2025
+	Fri Mar 14 23:12:22 2025
 $end
 $version
 	Icarus Verilog
@@ -11,11 +11,6 @@ $scope module tb_Dflipflop_4bit $end
 $var wire 4 ! Q [3:0] $end
 $var reg 4 " D [3:0] $end
 $var reg 1 # clk $end
-$scope module Dflipflop $end
-$var wire 4 $ D [3:0] $end
-$var wire 1 # clk $end
-$var reg 4 % Q [3:0] $end
-$upscope $end
 $upscope $end
 $enddefinitions $end
 $comment Show the parameter values. $end
@@ -23,23 +18,18 @@ $dumpall
 $end
 #0
 $dumpvars
-bx %
-b1 $
 0#
 b1 "
 bx !
 $end
 #5
 b1 !
-b1 %
 1#
 #10
 b11 "
-b11 $
 0#
 #15
 b11 !
-b11 %
 1#
 #20
 0#

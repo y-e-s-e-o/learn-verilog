@@ -1,4 +1,3 @@
-`include "ALU_4bit.v"
 `timescale 1ns/1ns
 
 module tb_ALU_4bit (
@@ -35,14 +34,14 @@ module tb_ALU_4bit (
 
         #1 // AND
         A_i = 4'b0001;
-        B_i = 3'b0011;
+        B_i = 4'b0011;
         Control_i = 2'b11;
 
     end
 
     initial begin
-	    $dumpfile("tb_ALU_4bit.vcd");
-	    $dumpvars(0, tb_ALU_4bit);
+	    $dumpfile("ALU_4bit.vcd");
+	    $dumpvars(1);
     end
 
 endmodule

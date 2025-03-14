@@ -1,4 +1,3 @@
-`include "decoder24.v"
 `timescale 1ns/1ns
 
 module tb_decoder24 (
@@ -41,8 +40,8 @@ module tb_decoder24 (
     end
 
     initial begin
-	    $dumpfile("tb_decoder24.vcd");
-	    $dumpvars(0, tb_decoder24);
+	    $dumpfile("decoder24.vcd");
+	    $dumpvars(1);
     end
 
 endmodule

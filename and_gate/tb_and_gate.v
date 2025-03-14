@@ -1,4 +1,3 @@
-`include "and_gate.v"
 `timescale 1ns/1ns
 
 module tb_and_gate(
@@ -36,8 +35,8 @@ module tb_and_gate(
     end
 
     initial begin
-	    $dumpfile("tb_and_gate.vcd");
-	    $dumpvars(0, tb_and_gate);
+	    $dumpfile("and_gate.vcd");
+	    $dumpvars(1);
     end
 
 endmodule

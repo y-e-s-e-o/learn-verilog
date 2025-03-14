@@ -7,37 +7,37 @@
 :vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/vhdl_textio.vpi";
 :vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/v2005_math.vpi";
 :vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/va_math.vpi";
-S_0x139f05fc0 .scope module, "tb_not_gate" "tb_not_gate" 2 4;
+S_0x121607fa0 .scope module, "tb_not_gate" "tb_not_gate" 2 3;
  .timescale -9 -9;
-v0x139f18fe0_0 .var "A_i", 0 0;
-v0x139f19090_0 .net "F_o", 0 0, L_0x139f19140;  1 drivers
-S_0x139f055a0 .scope module, "u_not_gate" "not_gate" 2 12, 3 1 0, S_0x139f05fc0;
+v0x12161aea0_0 .var "A_i", 0 0;
+v0x12161af50_0 .net "F_o", 0 0, L_0x12161b000;  1 drivers
+S_0x121607550 .scope module, "u_not_gate" "not_gate" 2 11, 3 1 0, S_0x121607fa0;
  .timescale 0 0;
     .port_info 0 /INPUT 1 "A_i";
     .port_info 1 /OUTPUT 1 "F_o";
-L_0x139f19140 .functor NOT 1, v0x139f18fe0_0, C4<0>, C4<0>, C4<0>;
-v0x139f06130_0 .net "A_i", 0 0, v0x139f18fe0_0;  1 drivers
-v0x139f18f30_0 .net "F_o", 0 0, L_0x139f19140;  alias, 1 drivers
-    .scope S_0x139f05fc0;
+L_0x12161b000 .functor NOT 1, v0x12161aea0_0, C4<0>, C4<0>, C4<0>;
+v0x121608110_0 .net "A_i", 0 0, v0x12161aea0_0;  1 drivers
+v0x12161adf0_0 .net "F_o", 0 0, L_0x12161b000;  alias, 1 drivers
+    .scope S_0x121607fa0;
 T_0 ;
     %delay 0, 0;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v0x139f18fe0_0, 0, 1;
+    %store/vec4 v0x12161aea0_0, 0, 1;
     %delay 5, 0;
     %pushi/vec4 1, 0, 1;
-    %store/vec4 v0x139f18fe0_0, 0, 1;
+    %store/vec4 v0x12161aea0_0, 0, 1;
     %delay 5, 0;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v0x139f18fe0_0, 0, 1;
+    %store/vec4 v0x12161aea0_0, 0, 1;
     %delay 5, 0;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v0x139f18fe0_0, 0, 1;
+    %store/vec4 v0x12161aea0_0, 0, 1;
     %end;
     .thread T_0;
-    .scope S_0x139f05fc0;
+    .scope S_0x121607fa0;
 T_1 ;
-    %vpi_call 2 25 "$dumpfile", "tb_not_gate.vcd" {0 0 0};
-    %vpi_call 2 26 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x139f05fc0 {0 0 0};
+    %vpi_call 2 24 "$dumpfile", "not_gate.vcd" {0 0 0};
+    %vpi_call 2 25 "$dumpvars", 32'sb00000000000000000000000000000001 {0 0 0};
     %end;
     .thread T_1;
 # The file index is used to find the file name in the following table.
@@ -45,4 +45,4 @@ T_1 ;
     "N/A";
     "<interactive>";
     "tb_not_gate.v";
-    "./not_gate.v";
+    "not_gate.v";

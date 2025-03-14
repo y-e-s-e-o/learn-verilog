@@ -1,5 +1,5 @@
 $date
-	Wed Feb 26 17:01:15 2025
+	Fri Mar 14 23:17:15 2025
 $end
 $version
 	Icarus Verilog
@@ -12,12 +12,6 @@ $var wire 1 ! Y_o $end
 $var reg 1 " D0_i $end
 $var reg 1 # D1_i $end
 $var reg 1 $ S_i $end
-$scope module u_mux21 $end
-$var wire 1 " D0_i $end
-$var wire 1 # D1_i $end
-$var wire 1 $ S_i $end
-$var wire 1 ! Y_o $end
-$upscope $end
 $upscope $end
 $enddefinitions $end
 $comment Show the parameter values. $end

@@ -1,4 +1,3 @@
-`include "add_sub_4bit.v"
 `timescale 1ns/1ns
 
 module tb_add_sub_4bit (
@@ -53,8 +52,8 @@ module tb_add_sub_4bit (
     end
 
     initial begin
-	    $dumpfile("tb_add_sub_4bit.vcd");
-	    $dumpvars(0, tb_add_sub_4bit);
+	    $dumpfile("add_sub_4bit.vcd");
+	    $dumpvars(1);
     end
 
 endmodule

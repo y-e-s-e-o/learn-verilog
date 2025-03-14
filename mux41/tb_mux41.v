@@ -1,4 +1,3 @@
-`include "mux41.v"
 `timescale 1ns/1ns
 
 module tb_mux41 (
@@ -54,8 +53,8 @@ module tb_mux41 (
     end
 
     initial begin
-	    $dumpfile("tb_mux41.vcd");
-	    $dumpvars(0, tb_mux41);
+	    $dumpfile("mux41.vcd");
+	    $dumpvars(1);
     end
 
 endmodule

@@ -1,4 +1,3 @@
-`include "Dflipflop_4bit.v"
 `timescale 1ns/1ns
 
 module tb_Dflipflop_4bit;
@@ -36,8 +35,8 @@ module tb_Dflipflop_4bit;
     end
 
     initial begin
-        $dumpfile("tb_Dflipflop_4bit.vcd");  
-        $dumpvars(0, tb_Dflipflop_4bit);     
+        $dumpfile("Dflipflop_4bit.vcd");  
+        $dumpvars(1);     
     end
 
 endmodule

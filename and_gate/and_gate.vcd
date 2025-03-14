@@ -1,5 +1,5 @@
 $date
-	Fri Feb 21 00:48:45 2025
+	Fri Mar 14 23:09:00 2025
 $end
 $version
 	Icarus Verilog
@@ -7,13 +7,10 @@ $end
 $timescale
 	1ns
 $end
-$scope module tb_not_gate $end
+$scope module tb_and_gate $end
 $var wire 1 ! F_o $end
 $var reg 1 " A_i $end
-$scope module u_not_gate $end
-$var wire 1 " A_i $end
-$var wire 1 ! F_o $end
-$upscope $end
+$var reg 1 # B_i $end
 $upscope $end
 $enddefinitions $end
 $comment Show the parameter values. $end
@@ -21,13 +18,15 @@ $dumpall
 $end
 #0
 $dumpvars
+0#
 0"
-1!
+0!
 $end
 #5
-0!
 1"
 #10
-1!
+1#
 0"
 #15
+1!
+1"
